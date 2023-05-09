@@ -1,0 +1,11 @@
+[
+    {"stateFrom" : "q0", "stateTo" : "q0", "currentLetter" : "0", "move" : "Right"},
+    {"stateFrom" : "q0", "stateTo" : "q0", "currentLetter" : "1", "move" : "Right"},
+    {"stateFrom" : "q0", "stateTo" : "q1", "currentLetter" : "_", "newLetter" : "_", "move" : "Left"},
+    {"stateFrom" : "q1", "stateTo" : "q2", "currentLetter" : "0", "newLetter" : "1", "move" : "Same"},
+    {"stateFrom" : "q1", "stateTo" : "q1", "currentLetter" : "1", "newLetter" : "0", "move" : "Left"},
+    {"stateFrom" : "q1", "stateTo" : "!" , "currentLetter" : "_", "newLetter" : "1", "move" : "Same"},
+    {"stateFrom" : "q2", "stateTo" : "q2", "currentLetter" : "0", "move" : "Left"},
+    {"stateFrom" : "q2", "stateTo" : "q2", "currentLetter" : "1", "move" : "Left"},
+    {"stateFrom" : "q2", "stateTo" : "!" , "currentLetter" : "_", "newLetter" : "_", "move" : "Right"}
+]

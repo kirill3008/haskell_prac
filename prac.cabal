@@ -25,9 +25,8 @@ source-repository head
 
 library
   exposed-modules:
-      DataTypes
       Lib
-      ParseJSON
+      MachineType
   other-modules:
       Paths_prac
   hs-source-dirs:
@@ -37,6 +36,8 @@ library
       aeson >=2
     , base >=4.7 && <5
     , bytestring
+    , text
+    , text-conversions
   default-language: Haskell2010
 
 executable prac-exe
@@ -51,6 +52,8 @@ executable prac-exe
     , base >=4.7 && <5
     , bytestring
     , prac
+    , text
+    , text-conversions
   default-language: Haskell2010
 
 test-suite prac-test
@@ -66,4 +69,6 @@ test-suite prac-test
     , base >=4.7 && <5
     , bytestring
     , prac
+    , text
+    , text-conversions
   default-language: Haskell2010

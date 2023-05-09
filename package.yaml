@@ -23,6 +23,8 @@ dependencies:
 - base >= 4.7 && < 5
 - aeson >= 2
 - bytestring
+- text
+- text-conversions
 
 ghc-options:
 - -Wall
