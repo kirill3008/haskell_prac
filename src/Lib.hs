@@ -10,7 +10,7 @@ import MachineType (
     Machine (Machine, line, pointer, currentState),
     Rule (stateFrom, stateTo, currentLetter, move, newLetter),
     Move (Left, Right, Same),
-    getItem, putItem)
+    getItem, putItem, printLine)
 
 
 offset :: Move -> Int
@@ -25,7 +25,6 @@ findRule (Machine r l c p) | null r = Nothing
 
 makeStep :: Machine -> Maybe Machine
 makeStep (Machine r l c p) | isNothing rule = Nothing
-                           | p + offset (move ( fromJust rule )) < 0 = Nothing
                            | isNothing (newLetter (fromJust rule)) = Just (Machine r l (stateTo (fromJust rule)) (offset (move (fromJust rule)) + p))
                            | otherwise = Just (Machine r (putItem l p (fromJust (newLetter (fromJust rule)))) (stateTo (fromJust rule)) (offset (move (fromJust rule)) + p))
                            where rule = findRule (Machine r l c p)
@@ -39,11 +38,11 @@ showAll (Just m) = do
     inp <- getLine
     case inp of
         "stop" -> print "Process stopped!"
-        "next" -> do
-            print (currentState m)
-            print (line m)
-            print (pointer m)
-            print (findRule m)
+        "" -> do
+            putStr (printLine (line m) (pointer m))
+            print ("current state: " ++ (currentState m))
+            putStr ("Next rule: ")
+            print (if isNothing (findRule m) then (findRule m) else Nothing)
             showAll (makeStep m)
         _ -> do
             print "failed to parse input!"

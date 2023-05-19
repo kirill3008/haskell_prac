@@ -4,7 +4,8 @@ module MachineType (
     Rule (..),
     Move (..),
     getItem,
-    putItem
+    putItem,
+    printLine
 ) where
 
 
@@ -76,3 +77,9 @@ insertIntoEndless [] 0 c = [c]
 insertIntoEndless [] index c = '_' : insertIntoEndless [] (index - 1) c
 insertIntoEndless (_ : hs) 0 c = c : hs
 insertIntoEndless (h : hs) index c = h : insertIntoEndless hs (index - 1) c
+
+printLine :: Line -> Int -> String
+printLine (Line [] ('_' : tl)) ptr = printLine (Line [] tl) (ptr - 1)
+printLine (Line [] rl) ptr | ptr >= 0 = rl ++ "\n" ++ (concat (replicate ptr " ") ++ "^\n")
+                           | otherwise = (concat (replicate (-ptr) " ")) ++ rl ++ "\n" ++ "^\n"
+printLine (Line l r) p = printLine (Line "" ((reverse l) ++ r)) (p + (length l))

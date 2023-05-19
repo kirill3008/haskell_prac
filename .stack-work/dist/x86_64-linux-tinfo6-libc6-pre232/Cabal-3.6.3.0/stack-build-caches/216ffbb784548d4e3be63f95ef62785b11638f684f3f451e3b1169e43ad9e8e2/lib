@@ -1,0 +1,20 @@
+/home/arkhip0v0/.stack/programs/x86_64-linux/ghc-tinfo6-libc6-pre232-9.2.7/lib/ghc-9.2.7/include/ghcversion.h:
+  hash: d590b76d2d5f98f01894882dc106d920a101f52edb6a09b9a7f8dc701b075565
+? /home/arkhip0v0/Documents/heskell/haskell_prac/.stack-work/dist/x86_64-linux-tinfo6-libc6-pre232/Cabal-3.6.3.0/build/autogen/Paths_prac.hs
+: hash: 2470f11f04f71003ff3e831e7f4eca3a950047cb2bcbdb1c394f3a68921e8a53
+? /home/arkhip0v0/Documents/heskell/haskell_prac/.stack-work/dist/x86_64-linux-tinfo6-libc6-pre232/Cabal-3.6.3.0/build/autogen/cabal_macros.h
+: hash: 805b645c7f41ff8b3361e2df3035b5ff98ee7d2f4a4541bd810432b6abebf9c7
+/home/arkhip0v0/Documents/heskell/haskell_prac/CHANGELOG.md:
+  hash: 4abd8ec037e6283c89641a35e6196ec7db354bad086c9004b482b2911df92025
+/home/arkhip0v0/Documents/heskell/haskell_prac/README.md:
+  hash: 98a90a13337026b163732b33838cd7718812f01fd985f1c024ca68d00180e271
+/home/arkhip0v0/Documents/heskell/haskell_prac/package.yaml:
+  hash: cfb0ed703c80cd649c6df910fd45d922cc9f9f556b795e6ead89b81373b0110c
+/home/arkhip0v0/Documents/heskell/haskell_prac/prac.cabal:
+  hash: 50aedc4ab5cfa8bad3ad61b6de30838311928e76fd14e34e61c79107d3340c49
+/home/arkhip0v0/Documents/heskell/haskell_prac/src/Lib.hs:
+  hash: 17d0b3060aeb4d3884a6a390bf56e2cdd08942656904c86916ada7fb76923e75
+/home/arkhip0v0/Documents/heskell/haskell_prac/src/MachineType.hs:
+  hash: 63a4bab03a1ee58616c22a6e0dc97e26a570803d5808db5f19e645338604ef99
+/usr/include/stdc-predef.h:
+  hash: 64fdf694f7b3d51ec6c45c06dcb71ebbe9455742d3ea673012016668853d3bff

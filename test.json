@@ -13,6 +13,7 @@
             {"stateFrom" : "q1", "stateTo" : "q1", "currentLetter" : "2", "move" : "Left"},
             {"stateFrom" : "q1", "stateTo" : "q1", "currentLetter" : "3", "move" : "Left"},
             {"stateFrom" : "q1", "stateTo" : "q2", "currentLetter" : "_", "move" : "Right"},
+            {"stateFrom" : "q1", "stateTo" : "q1", "currentLetter" : "=", "move" : "Left"},
 
             {"stateFrom" : "q2", "stateTo" : "q3", "currentLetter" : "0", "newLetter": "_", "move" : "Right"},
             {"stateFrom" : "q2", "stateTo" : "q4", "currentLetter" : "1", "newLetter": "_", "move" : "Right"},
@@ -53,17 +54,8 @@
 
             {"stateFrom" : "q9", "stateTo" : "q9", "currentLetter" : "0", "newLetter": "_", "move" : "Right"},
             {"stateFrom" : "q9", "stateTo" : "!", "currentLetter" : "1", "newLetter": "1", "move" : "Same"}
-
-
-
-
-
-
-
-
-
         ],
-    "line" : "1011",
+    "line" : "1203",
     "currentState" : "q0",
     "pointer" : 0
 }
