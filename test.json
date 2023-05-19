@@ -4,13 +4,64 @@
         [
             {"stateFrom" : "q0", "stateTo" : "q0", "currentLetter" : "0", "move" : "Right"},
             {"stateFrom" : "q0", "stateTo" : "q0", "currentLetter" : "1", "move" : "Right"},
-            {"stateFrom" : "q0", "stateTo" : "q1", "currentLetter" : "_", "newLetter" : "_", "move" : "Left"},
-            {"stateFrom" : "q1", "stateTo" : "q2", "currentLetter" : "0", "newLetter" : "1", "move" : "Same"},
-            {"stateFrom" : "q1", "stateTo" : "q1", "currentLetter" : "1", "newLetter" : "0", "move" : "Left"},
-            {"stateFrom" : "q1", "stateTo" : "!" , "currentLetter" : "_", "newLetter" : "1", "move" : "Same"},
-            {"stateFrom" : "q2", "stateTo" : "q2", "currentLetter" : "0", "move" : "Left"},
-            {"stateFrom" : "q2", "stateTo" : "q2", "currentLetter" : "1", "move" : "Left"},
-            {"stateFrom" : "q2", "stateTo" : "!" , "currentLetter" : "_", "newLetter" : "_", "move" : "Right"}
+            {"stateFrom" : "q0", "stateTo" : "q0", "currentLetter" : "2", "move" : "Right"},
+            {"stateFrom" : "q0", "stateTo" : "q0", "currentLetter" : "3", "move" : "Right"},
+            {"stateFrom" : "q0", "stateTo" : "q1", "currentLetter" : "_", "newLetter": "=", "move" : "Left"},
+
+            {"stateFrom" : "q1", "stateTo" : "q1", "currentLetter" : "0", "move" : "Left"},
+            {"stateFrom" : "q1", "stateTo" : "q1", "currentLetter" : "1", "move" : "Left"},
+            {"stateFrom" : "q1", "stateTo" : "q1", "currentLetter" : "2", "move" : "Left"},
+            {"stateFrom" : "q1", "stateTo" : "q1", "currentLetter" : "3", "move" : "Left"},
+            {"stateFrom" : "q1", "stateTo" : "q2", "currentLetter" : "_", "move" : "Right"},
+
+            {"stateFrom" : "q2", "stateTo" : "q3", "currentLetter" : "0", "newLetter": "_", "move" : "Right"},
+            {"stateFrom" : "q2", "stateTo" : "q4", "currentLetter" : "1", "newLetter": "_", "move" : "Right"},
+            {"stateFrom" : "q2", "stateTo" : "q5", "currentLetter" : "2", "newLetter": "_", "move" : "Right"},
+            {"stateFrom" : "q2", "stateTo" : "q6", "currentLetter" : "3", "newLetter": "_", "move" : "Right"},
+            {"stateFrom" : "q2", "stateTo" : "q9", "currentLetter" : "=", "newLetter": "_", "move" : "Right"},
+
+            {"stateFrom" : "q3", "stateTo" : "q3", "currentLetter" : "0", "move" : "Right"},
+            {"stateFrom" : "q3", "stateTo" : "q3", "currentLetter" : "1", "move" : "Right"},
+            {"stateFrom" : "q3", "stateTo" : "q3", "currentLetter" : "2", "move" : "Right"},
+            {"stateFrom" : "q3", "stateTo" : "q3", "currentLetter" : "3", "move" : "Right"},
+            {"stateFrom" : "q3", "stateTo" : "q7", "currentLetter" : "_", "newLetter": "0", "move" : "Right"},
+            {"stateFrom" : "q3", "stateTo" : "q3", "currentLetter" : "=", "newLetter": "=", "move" : "Right"},
+
+            {"stateFrom" : "q4", "stateTo" : "q4", "currentLetter" : "0", "move" : "Right"},
+            {"stateFrom" : "q4", "stateTo" : "q4", "currentLetter" : "1", "move" : "Right"},
+            {"stateFrom" : "q4", "stateTo" : "q4", "currentLetter" : "2", "move" : "Right"},
+            {"stateFrom" : "q4", "stateTo" : "q4", "currentLetter" : "3", "move" : "Right"},
+            {"stateFrom" : "q4", "stateTo" : "q8", "currentLetter" : "_", "newLetter": "0", "move" : "Right"},
+            {"stateFrom" : "q4", "stateTo" : "q4", "currentLetter" : "=", "newLetter": "=", "move" : "Right"},
+
+            {"stateFrom" : "q5", "stateTo" : "q5", "currentLetter" : "0", "move" : "Right"},
+            {"stateFrom" : "q5", "stateTo" : "q5", "currentLetter" : "1", "move" : "Right"},
+            {"stateFrom" : "q5", "stateTo" : "q5", "currentLetter" : "2", "move" : "Right"},
+            {"stateFrom" : "q5", "stateTo" : "q5", "currentLetter" : "3", "move" : "Right"},
+            {"stateFrom" : "q5", "stateTo" : "q7", "currentLetter" : "_", "newLetter": "1", "move" : "Right"},
+            {"stateFrom" : "q5", "stateTo" : "q5", "currentLetter" : "=", "newLetter": "=", "move" : "Right"},
+
+            {"stateFrom" : "q6", "stateTo" : "q6", "currentLetter" : "0", "move" : "Right"},
+            {"stateFrom" : "q6", "stateTo" : "q6", "currentLetter" : "1", "move" : "Right"},
+            {"stateFrom" : "q6", "stateTo" : "q6", "currentLetter" : "2", "move" : "Right"},
+            {"stateFrom" : "q6", "stateTo" : "q6", "currentLetter" : "3", "move" : "Right"},
+            {"stateFrom" : "q6", "stateTo" : "q8", "currentLetter" : "_", "newLetter": "1", "move" : "Right"},
+            {"stateFrom" : "q6", "stateTo" : "q6", "currentLetter" : "=", "newLetter": "=", "move" : "Right"},
+
+            {"stateFrom" : "q7", "stateTo" : "q1", "currentLetter" : "_", "newLetter": "0", "move" : "Left"},
+            {"stateFrom" : "q8", "stateTo" : "q1", "currentLetter" : "_", "newLetter": "1", "move" : "Left"},
+
+            {"stateFrom" : "q9", "stateTo" : "q9", "currentLetter" : "0", "newLetter": "_", "move" : "Right"},
+            {"stateFrom" : "q9", "stateTo" : "!", "currentLetter" : "1", "newLetter": "1", "move" : "Same"}
+
+
+
+
+
+
+
+
+
         ],
     "line" : "1011",
     "currentState" : "q0",
